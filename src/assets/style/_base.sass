@@ -1,0 +1,61 @@
+/* Roboto */
+@font-face
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 400
+	src: url(assetsfonts/Roboto/Roboto-Regular.woff)
+	font-display: swap
+
+@font-face
+	font-family: 'Roboto'
+	font-style: italic
+	font-weight: 400
+	src: url(assets/fonts/Roboto/Roboto-Italic.woff)
+	font-display: swap
+
+@font-face
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 700
+	src: url(assets/fonts/Roboto/Roboto-Bold.woff)
+	font-display: swap
+
+*
+	box-sizing: border-box
+
+img
+	max-width: 100%
+	height: auto
+
+body
+	color: $black
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.2
+	overflow-x: hidden
+
+a
+	text-decoration: none
+	&:hover
+		transition-duration: .3s
+
+button,
+input[type="checkbox"]
+	border: none
+	outline: none
+	font: inherit
+
+button,
+input[type="submit"]
+	cursor: pointer
+
+.wrapper
+	position: relative
+
+.container
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	padding: 0 10px
+	box-sizing: border-box

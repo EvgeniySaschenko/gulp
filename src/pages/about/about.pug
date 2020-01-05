@@ -1,0 +1,17 @@
+extends ../../layout/root
+
+block title 
+	title Заголовок страницы About
+block meta_k 
+	meta(name="keywords" content="Ключевые слова страницы About")
+block meta_d 
+	meta(name="description" content="Описание страницы About")
+
+block main
+	+b.MAIN(role="main").main
+		.container
+			+e.row Страница About
+
+block pageMod
+	link(rel="stylesheet", href="assets/pages/about.css")
+	script(src="assets/pages/about.js")
