@@ -1,61 +1,70 @@
 /* Roboto */
 @font-face
-	font-family: 'Roboto'
-	font-style: normal
-	font-weight: 400
-	src: url(assetsfonts/Roboto/Roboto-Regular.woff)
-	font-display: swap
+  font-family: $roboto
+  font-style: normal
+  font-weight: 400
+  src: url(/assets/fonts/Roboto/Roboto-Regular.woff)
+  font-display: swap
 
 @font-face
-	font-family: 'Roboto'
-	font-style: italic
-	font-weight: 400
-	src: url(assets/fonts/Roboto/Roboto-Italic.woff)
-	font-display: swap
+  font-family: $roboto
+  font-style: italic
+  font-weight: 400
+  src: url(/assets/fonts/Roboto/Roboto-Italic.woff)
+  font-display: swap
 
 @font-face
-	font-family: 'Roboto'
-	font-style: normal
-	font-weight: 700
-	src: url(assets/fonts/Roboto/Roboto-Bold.woff)
-	font-display: swap
+  font-family: $roboto
+  font-style: normal
+  font-weight: 700
+  src: url(/assets/fonts/Roboto/Roboto-Bold.woff)
+  font-display: swap
 
 *
-	box-sizing: border-box
+  box-sizing: border-box
 
 img
-	max-width: 100%
-	height: auto
+  max-width: 100%
+  height: auto
 
 body
-	color: $black
-	font-family: 'Roboto', sans-serif
-	font-size: 16px
-	font-weight: 400
-	line-height: 1.2
-	overflow-x: hidden
+  color: $black
+  font-family: $roboto, sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 1.2
+  overflow-x: hidden
 
 a
-	text-decoration: none
-	&:hover
-		transition-duration: .3s
+  text-decoration: none
+  &:hover
+    transition-duration: .3s
 
 button,
 input[type="checkbox"]
-	border: none
-	outline: none
-	font: inherit
+  border: none
+  outline: none
+  font: inherit
 
 button,
 input[type="submit"]
-	cursor: pointer
+  cursor: pointer
 
 .wrapper
-	position: relative
+  position: relative
 
 .container
-	max-width: 1170px
-	width: 100%
-	margin: 0 auto
-	padding: 0 10px
-	box-sizing: border-box
+  width: 100%
+  margin: 0 auto
+  padding: 0 10px
+  box-sizing: border-box
+  @include screen-xs()
+    width: 100%
+  @include screen-sm()
+    width: 540px
+  @include screen-md()
+    width: 720px
+  @include screen-lg()
+    width: 960px
+  @include screen-xl()
+    width: 1140px

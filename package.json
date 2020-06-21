@@ -32,6 +32,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-symbols": "^3.2.3",
     "gulp-uglify": "^3.0.2",
-    "gulp.spritesmith": "^6.11.0"
+    "gulp.spritesmith": "^6.11.0",
+    "prettier": "^2.0.5"
   }
 }

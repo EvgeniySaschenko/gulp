@@ -1,17 +1,20 @@
 extends ../../layout/root
 
-block title 
-	title Заголовок страницы Index
-block meta_k 
-	meta(name="keywords" content="Ключевые слова страницы Index")
-block meta_d 
-	meta(name="description" content="Описание страницы Index")
+block pageModHead
+  title Заголовок страницы Index
+  meta(name="keywords" content="Ключевые слова страницы Index")
+  meta(name="description" content="Описание страницы Index")
+  link(rel="stylesheet", href="assets/pages/index.css")
 
 block main
-	+b.MAIN(role="main").main
-		.container
-			+e.row Страница Index
+  +b.MAIN(role="main").main
+    .container
+      +e.row Страница Index
 
-block pageMod
-	link(rel="stylesheet", href="assets/pages/index.css")
-	script(src="assets/pages/index.js")
+block main
+  +b.MAIN(role="main").main
+    .container
+      +e.row Страница About
+
+block pageModFooter
+  script(src="assets/pages/index.js")

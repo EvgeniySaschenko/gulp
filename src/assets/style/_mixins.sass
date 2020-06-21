@@ -1,0 +1,24 @@
+// Между max и 1200 = 1140
+@mixin screen-xl
+  @media (min-width: $xl) 
+    @content
+
+// Между 1200 и 992px = 960px
+@mixin screen-lg
+  @media (max-width: $xl) and (min-width: $lg) 
+    @content
+
+// Между 992px и 768px = 720px
+@mixin screen-md
+  @media (max-width: $lg) and (min-width: $md) 
+    @content
+
+// Между 768px и 576px = 540px
+@mixin screen-sm
+  @media (max-width: $md) and (min-width: $sm) 
+    @content
+
+// Между 576px и мин = 100%
+@mixin screen-xs
+  @media (max-width: $sm)
+    @content
