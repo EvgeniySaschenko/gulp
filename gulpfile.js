@@ -155,7 +155,7 @@ function cssPages() {
 // Сборка HTML страниц.
 function pagesHtml() {
   return gulp
-    .src('src/**/*.pug')
+    .src('src/pages/**/*.pug')
     .pipe(changed('src/**/*.pug'))
     .pipe(
       data(() => {

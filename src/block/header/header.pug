@@ -1,10 +1,10 @@
-mixin b-header()
+mixin b-header
   +b.HEADER.header 
     .container
       +e.row 
-        +b.NAV.nav(class="_header" id="nav__header")
-          +e.UL.list#nav-list_header
+        +b#nav__header.NAV.nav._header
+          +e#nav-list_header.UL.list
             +e.LI.item
-              +e.A.link(href="/") Home
+              +e.A.link(href='/') Home2
             +e.LI.item
-              +e.A.link(href="about.html") About1
+              +e.A.link(href='about.html') About1
